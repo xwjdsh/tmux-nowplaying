@@ -9,7 +9,7 @@ get_nowplaying_info() {
 
 scroll_string() {
 	local str=$1
-	local length=$(get_tmux_option "@tmux-nowplaying-length" 15)
+	local length=$(get_tmux_option "@tmux-nowplaying-length" 20)
 	local result
 	if ((${#str} > length)); then
 		local index=$(get_tmux_option "@nowplaying-scroll-start" 0)
